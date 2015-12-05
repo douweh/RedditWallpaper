@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF82B78F4305557D5E1519E6 /* Pods_RedditWallpaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311F3583C2C4BC4524C49E47 /* Pods_RedditWallpaper.framework */; };
+		DDBA7F821C11355D008FF634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7F811C11355D008FF634 /* AppDelegate.swift */; };
+		DDBA7F841C11355D008FF634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7F831C11355D008FF634 /* ViewController.swift */; };
+		DDBA7F871C11355D008FF634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBA7F851C11355D008FF634 /* Main.storyboard */; };
+		DDBA7F8A1C11355D008FF634 /* RedditWallpaper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7F881C11355D008FF634 /* RedditWallpaper.xcdatamodeld */; };
+		DDBA7F8C1C11355D008FF634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBA7F8B1C11355D008FF634 /* Assets.xcassets */; };
+		DDBA7F8F1C11355D008FF634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBA7F8D1C11355D008FF634 /* LaunchScreen.storyboard */; };
+		DDBA7F9A1C11355D008FF634 /* RedditWallpaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7F991C11355D008FF634 /* RedditWallpaperTests.swift */; };
+		DDBA7FA51C11355D008FF634 /* RedditWallpaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7FA41C11355D008FF634 /* RedditWallpaperUITests.swift */; };
+		DDBE3D481C11AA8F0078647F /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE3D471C11AA8F0078647F /* WallpaperViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDBA7F961C11355D008FF634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBA7F761C11355D008FF634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBA7F7D1C11355D008FF634;
+			remoteInfo = RedditWallpaper;
+		};
+		DDBA7FA11C11355D008FF634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBA7F761C11355D008FF634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBA7F7D1C11355D008FF634;
+			remoteInfo = RedditWallpaper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00972524DC1358A377EED204 /* Pods-RedditWallpaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditWallpaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedditWallpaper/Pods-RedditWallpaper.debug.xcconfig"; sourceTree = "<group>"; };
+		2D2E243E8F288C8CF45A2386 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		311F3583C2C4BC4524C49E47 /* Pods_RedditWallpaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedditWallpaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D8B26868F072E6B6AFA3BE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBA7F7E1C11355D008FF634 /* RedditWallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditWallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBA7F811C11355D008FF634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDBA7F831C11355D008FF634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDBA7F861C11355D008FF634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDBA7F891C11355D008FF634 /* RedditWallpaper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedditWallpaper.xcdatamodel; sourceTree = "<group>"; };
+		DDBA7F8B1C11355D008FF634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDBA7F8E1C11355D008FF634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDBA7F901C11355D008FF634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBA7F951C11355D008FF634 /* RedditWallpaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditWallpaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBA7F991C11355D008FF634 /* RedditWallpaperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditWallpaperTests.swift; sourceTree = "<group>"; };
+		DDBA7F9B1C11355D008FF634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBA7FA01C11355D008FF634 /* RedditWallpaperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditWallpaperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBA7FA41C11355D008FF634 /* RedditWallpaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditWallpaperUITests.swift; sourceTree = "<group>"; };
+		DDBA7FA61C11355D008FF634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBE3D471C11AA8F0078647F /* WallpaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
+		EAEF09D1AF3105B8C33BCFD8 /* Pods-RedditWallpaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditWallpaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedditWallpaper/Pods-RedditWallpaper.release.xcconfig"; sourceTree = "<group>"; };
+		F90599C29390E322F9FD35EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F5C925C606E8F542886A411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF82B78F4305557D5E1519E6 /* Pods_RedditWallpaper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F921C11355D008FF634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F9D1C11355D008FF634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35845EB6D43586FA3105B41D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D8B26868F072E6B6AFA3BE /* Pods.framework */,
+				311F3583C2C4BC4524C49E47 /* Pods_RedditWallpaper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA459A647C5C62443CB4A6DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D2E243E8F288C8CF45A2386 /* Pods.debug.xcconfig */,
+				F90599C29390E322F9FD35EF /* Pods.release.xcconfig */,
+				EAEF09D1AF3105B8C33BCFD8 /* Pods-RedditWallpaper.release.xcconfig */,
+				00972524DC1358A377EED204 /* Pods-RedditWallpaper.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDBA7F751C11355D008FF634 = {
+			isa = PBXGroup;
+			children = (
+				DDBA7F801C11355D008FF634 /* RedditWallpaper */,
+				DDBA7F981C11355D008FF634 /* RedditWallpaperTests */,
+				DDBA7FA31C11355D008FF634 /* RedditWallpaperUITests */,
+				DDBA7F7F1C11355D008FF634 /* Products */,
+				AA459A647C5C62443CB4A6DB /* Pods */,
+				35845EB6D43586FA3105B41D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDBA7F7F1C11355D008FF634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA7F7E1C11355D008FF634 /* RedditWallpaper.app */,
+				DDBA7F951C11355D008FF634 /* RedditWallpaperTests.xctest */,
+				DDBA7FA01C11355D008FF634 /* RedditWallpaperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDBA7F801C11355D008FF634 /* RedditWallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA7F811C11355D008FF634 /* AppDelegate.swift */,
+				DDBA7F831C11355D008FF634 /* ViewController.swift */,
+				DDBA7F851C11355D008FF634 /* Main.storyboard */,
+				DDBE3D471C11AA8F0078647F /* WallpaperViewController.swift */,
+				DDBA7F8B1C11355D008FF634 /* Assets.xcassets */,
+				DDBA7F8D1C11355D008FF634 /* LaunchScreen.storyboard */,
+				DDBA7F901C11355D008FF634 /* Info.plist */,
+				DDBA7F881C11355D008FF634 /* RedditWallpaper.xcdatamodeld */,
+			);
+			path = RedditWallpaper;
+			sourceTree = "<group>";
+		};
+		DDBA7F981C11355D008FF634 /* RedditWallpaperTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA7F991C11355D008FF634 /* RedditWallpaperTests.swift */,
+				DDBA7F9B1C11355D008FF634 /* Info.plist */,
+			);
+			path = RedditWallpaperTests;
+			sourceTree = "<group>";
+		};
+		DDBA7FA31C11355D008FF634 /* RedditWallpaperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBA7FA41C11355D008FF634 /* RedditWallpaperUITests.swift */,
+				DDBA7FA61C11355D008FF634 /* Info.plist */,
+			);
+			path = RedditWallpaperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDBA7F7D1C11355D008FF634 /* RedditWallpaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBA7FA91C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaper" */;
+			buildPhases = (
+				F426AA75EBB590870ECB0012 /* Check Pods Manifest.lock */,
+				DDBA7F7A1C11355D008FF634 /* Sources */,
+				DDBA7F7C1C11355D008FF634 /* Resources */,
+				225EFCA717CE51DCC3EE4B1A /* Embed Pods Frameworks */,
+				4F5C925C606E8F542886A411 /* Frameworks */,
+				9011A406F8174B028A51484B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedditWallpaper;
+			productName = RedditWallpaper;
+			productReference = DDBA7F7E1C11355D008FF634 /* RedditWallpaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDBA7F941C11355D008FF634 /* RedditWallpaperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBA7FAC1C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaperTests" */;
+			buildPhases = (
+				DDBA7F911C11355D008FF634 /* Sources */,
+				DDBA7F921C11355D008FF634 /* Frameworks */,
+				DDBA7F931C11355D008FF634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBA7F971C11355D008FF634 /* PBXTargetDependency */,
+			);
+			name = RedditWallpaperTests;
+			productName = RedditWallpaperTests;
+			productReference = DDBA7F951C11355D008FF634 /* RedditWallpaperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDBA7F9F1C11355D008FF634 /* RedditWallpaperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBA7FAF1C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaperUITests" */;
+			buildPhases = (
+				DDBA7F9C1C11355D008FF634 /* Sources */,
+				DDBA7F9D1C11355D008FF634 /* Frameworks */,
+				DDBA7F9E1C11355D008FF634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBA7FA21C11355D008FF634 /* PBXTargetDependency */,
+			);
+			name = RedditWallpaperUITests;
+			productName = RedditWallpaperUITests;
+			productReference = DDBA7FA01C11355D008FF634 /* RedditWallpaperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDBA7F761C11355D008FF634 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Douwe Homans";
+				TargetAttributes = {
+					DDBA7F7D1C11355D008FF634 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = G8Y3P78YHB;
+					};
+					DDBA7F941C11355D008FF634 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DDBA7F7D1C11355D008FF634;
+					};
+					DDBA7F9F1C11355D008FF634 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DDBA7F7D1C11355D008FF634;
+					};
+				};
+			};
+			buildConfigurationList = DDBA7F791C11355D008FF634 /* Build configuration list for PBXProject "RedditWallpaper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDBA7F751C11355D008FF634;
+			productRefGroup = DDBA7F7F1C11355D008FF634 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDBA7F7D1C11355D008FF634 /* RedditWallpaper */,
+				DDBA7F941C11355D008FF634 /* RedditWallpaperTests */,
+				DDBA7F9F1C11355D008FF634 /* RedditWallpaperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDBA7F7C1C11355D008FF634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBA7F8F1C11355D008FF634 /* LaunchScreen.storyboard in Resources */,
+				DDBA7F8C1C11355D008FF634 /* Assets.xcassets in Resources */,
+				DDBA7F871C11355D008FF634 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F931C11355D008FF634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F9E1C11355D008FF634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		225EFCA717CE51DCC3EE4B1A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedditWallpaper/Pods-RedditWallpaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9011A406F8174B028A51484B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedditWallpaper/Pods-RedditWallpaper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F426AA75EBB590870ECB0012 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDBA7F7A1C11355D008FF634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBA7F841C11355D008FF634 /* ViewController.swift in Sources */,
+				DDBA7F8A1C11355D008FF634 /* RedditWallpaper.xcdatamodeld in Sources */,
+				DDBA7F821C11355D008FF634 /* AppDelegate.swift in Sources */,
+				DDBE3D481C11AA8F0078647F /* WallpaperViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F911C11355D008FF634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBA7F9A1C11355D008FF634 /* RedditWallpaperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBA7F9C1C11355D008FF634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBA7FA51C11355D008FF634 /* RedditWallpaperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDBA7F971C11355D008FF634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBA7F7D1C11355D008FF634 /* RedditWallpaper */;
+			targetProxy = DDBA7F961C11355D008FF634 /* PBXContainerItemProxy */;
+		};
+		DDBA7FA21C11355D008FF634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBA7F7D1C11355D008FF634 /* RedditWallpaper */;
+			targetProxy = DDBA7FA11C11355D008FF634 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDBA7F851C11355D008FF634 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBA7F861C11355D008FF634 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDBA7F8D1C11355D008FF634 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBA7F8E1C11355D008FF634 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDBA7FA81C11355D008FF634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDBA7FAB1C11355D008FF634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAEF09D1AF3105B8C33BCFD8 /* Pods-RedditWallpaper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RedditWallpaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDBA7FAE1C11355D008FF634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedditWallpaperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditWallpaper.app/RedditWallpaper";
+			};
+			name = Release;
+		};
+		DDBA7FB11C11355D008FF634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedditWallpaperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RedditWallpaper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		DDBE3D431C116F860078647F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		DDBE3D441C116F860078647F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00972524DC1358A377EED204 /* Pods-RedditWallpaper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RedditWallpaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDBE3D451C116F860078647F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedditWallpaperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditWallpaper.app/RedditWallpaper";
+			};
+			name = Debug;
+		};
+		DDBE3D461C116F860078647F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedditWallpaperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avocado.RedditWallpaperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RedditWallpaper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDBA7F791C11355D008FF634 /* Build configuration list for PBXProject "RedditWallpaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBA7FA81C11355D008FF634 /* Release */,
+				DDBE3D431C116F860078647F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBA7FA91C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBA7FAB1C11355D008FF634 /* Release */,
+				DDBE3D441C116F860078647F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBA7FAC1C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBA7FAE1C11355D008FF634 /* Release */,
+				DDBE3D451C116F860078647F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBA7FAF1C11355D008FF634 /* Build configuration list for PBXNativeTarget "RedditWallpaperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBA7FB11C11355D008FF634 /* Release */,
+				DDBE3D461C116F860078647F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDBA7F881C11355D008FF634 /* RedditWallpaper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDBA7F891C11355D008FF634 /* RedditWallpaper.xcdatamodel */,
+			);
+			currentVersion = DDBA7F891C11355D008FF634 /* RedditWallpaper.xcdatamodel */;
+			path = RedditWallpaper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDBA7F761C11355D008FF634 /* Project object */;
+}
