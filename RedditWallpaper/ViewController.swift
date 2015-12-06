@@ -105,8 +105,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         return dataStore.count
     }
     
+    
+    // MARK: - ViewController Lifecycle -
     override func viewDidLoad()
     {
+        print("ViewDidLoad: \(self)")
         super.viewDidLoad()
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -118,9 +121,27 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool)
     {
+        print("ViewWillAppear: \(self)")
         super.viewWillAppear(animated)
         reloadDataStore()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        print("ViewDidAppear: \(self)")
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        print("ViewWillDisappear: \(self)")
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        print("ViewDidDisappear: \(self)")
+        super.viewDidDisappear(animated)
+    }
+    
     
     func refresh(sender:AnyObject)
     {
@@ -214,6 +235,11 @@ class ViewController: UIViewController, UITableViewDataSource {
                wallpaperVC.imageUrl=originatingCell.imageUrl
             }
         }
+    }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue)
+    {
+    
     }
 }
 

@@ -22,4 +22,39 @@ class WallpaperViewController: UIViewController {
                 }
         }
     }
+    
+    // MARK: - ViewController Lifecycle -
+    override func viewDidLoad()
+    {
+        print("ViewDidLoad: \(self)")
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        print("ViewWillAppear: \(self)")
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        print("ViewDidAppear: \(self)")
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        print("ViewWillDisappear: \(self)")
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool)
+    {
+        print("ViewDidDisappear: \(self)")
+        super.viewDidDisappear(animated)
+    }
+    
+    deinit
+    {
+        print("Deinit: \(self)")
+    }
 }
