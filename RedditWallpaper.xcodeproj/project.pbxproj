@@ -16,6 +16,9 @@
 		DDBA7F8F1C11355D008FF634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBA7F8D1C11355D008FF634 /* LaunchScreen.storyboard */; };
 		DDBA7F9A1C11355D008FF634 /* RedditWallpaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7F991C11355D008FF634 /* RedditWallpaperTests.swift */; };
 		DDBA7FA51C11355D008FF634 /* RedditWallpaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA7FA41C11355D008FF634 /* RedditWallpaperUITests.swift */; };
+		DDBBB7B01C1435E10089A856 /* Wallpaper+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBB7AE1C1435E10089A856 /* Wallpaper+CoreDataProperties.swift */; };
+		DDBBB7B11C1435E10089A856 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBB7AF1C1435E10089A856 /* Wallpaper.swift */; };
+		DDBBB7B31C144D840089A856 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DDBBB7B21C144D840089A856 /* README.md */; };
 		DDBE3D481C11AA8F0078647F /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE3D471C11AA8F0078647F /* WallpaperViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		DDBA7FA01C11355D008FF634 /* RedditWallpaperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditWallpaperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBA7FA41C11355D008FF634 /* RedditWallpaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditWallpaperUITests.swift; sourceTree = "<group>"; };
 		DDBA7FA61C11355D008FF634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBBB7AE1C1435E10089A856 /* Wallpaper+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Wallpaper+CoreDataProperties.swift"; path = "../Wallpaper+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDBBB7AF1C1435E10089A856 /* Wallpaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wallpaper.swift; path = ../Wallpaper.swift; sourceTree = "<group>"; };
+		DDBBB7B21C144D840089A856 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DDBE3D471C11AA8F0078647F /* WallpaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
 		EAEF09D1AF3105B8C33BCFD8 /* Pods-RedditWallpaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditWallpaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedditWallpaper/Pods-RedditWallpaper.release.xcconfig"; sourceTree = "<group>"; };
 		F90599C29390E322F9FD35EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 		DDBA7F751C11355D008FF634 = {
 			isa = PBXGroup;
 			children = (
+				DDBBB7B21C144D840089A856 /* README.md */,
 				DDBA7F801C11355D008FF634 /* RedditWallpaper */,
 				DDBA7F981C11355D008FF634 /* RedditWallpaperTests */,
 				DDBA7FA31C11355D008FF634 /* RedditWallpaperUITests */,
@@ -131,6 +138,8 @@
 		DDBA7F801C11355D008FF634 /* RedditWallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				DDBBB7AE1C1435E10089A856 /* Wallpaper+CoreDataProperties.swift */,
+				DDBBB7AF1C1435E10089A856 /* Wallpaper.swift */,
 				DDBA7F811C11355D008FF634 /* AppDelegate.swift */,
 				DDBA7F831C11355D008FF634 /* ViewController.swift */,
 				DDBA7F851C11355D008FF634 /* Main.storyboard */,
@@ -347,7 +356,10 @@
 				DDBA7F841C11355D008FF634 /* ViewController.swift in Sources */,
 				DDBA7F8A1C11355D008FF634 /* RedditWallpaper.xcdatamodeld in Sources */,
 				DDBA7F821C11355D008FF634 /* AppDelegate.swift in Sources */,
+				DDBBB7B31C144D840089A856 /* README.md in Sources */,
 				DDBE3D481C11AA8F0078647F /* WallpaperViewController.swift in Sources */,
+				DDBBB7B11C1435E10089A856 /* Wallpaper.swift in Sources */,
+				DDBBB7B01C1435E10089A856 /* Wallpaper+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,27 +15,17 @@ class ImageTableViewCell : UITableViewCell {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var wallpaperImageView: UIImageView!
     
-    var imageUrl: String = "" {
+    var wallpaper: Wallpaper? {
         didSet {
-            myLabel.text = imageUrl
-            
-            // Load image asynchronuously (if url changed)
-            if (imageUrl != "" && !(imageUrl==oldValue)) {
-                
-                // Store the url we are loading
-                let urlToLoad = imageUrl
-                wallpaperImageView?.image = nil
-                
-                Alamofire.request(.GET, imageUrl)
-                        .responseImage { response in
-                        // We have closed in the urlToLoad, so now use that to check if this cell's imageUrl
-                        // has not changed in the meantime...
-                        if ( self.imageUrl == urlToLoad) {
-                            self.wallpaperImageView?.contentMode = .ScaleAspectFill
-                            self.wallpaperImageView?.image = response.result.value
-                        }
-                    }
-            }
+            let newValue = wallpaper
+            self.wallpaperImageView?.image = nil
+            wallpaper?.loadImage({ (image) -> Void in
+                // Only update image if this cell's wallpaper didn't change in the meantime.
+                if (self.wallpaper == newValue) {
+                    self.wallpaperImageView?.contentMode = .ScaleAspectFill
+                    self.wallpaperImageView?.image = image
+                }
+            })
         }
     }
 }
@@ -43,7 +33,7 @@ class ImageTableViewCell : UITableViewCell {
 class ViewController: UIViewController, UITableViewDataSource {
 
     let ImageCellIdentifier = "ImageCellIdentifier"
-    var dataStore = [NSManagedObject]()
+    var dataStore = [Wallpaper]()
     var refreshControl:UIRefreshControl!
 
     @IBOutlet weak var tableView: UITableView!
@@ -74,7 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let entity =  NSEntityDescription.entityForName("Wallpaper",
             inManagedObjectContext:managedContext)
         
-        let wallpaper = NSManagedObject(entity: entity!,
+        let wallpaper = Wallpaper(entity: entity!,
             insertIntoManagedObjectContext: managedContext)
         
         //3
@@ -94,8 +84,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     {
         let cell = tableView.dequeueReusableCellWithIdentifier(ImageCellIdentifier) as! ImageTableViewCell
         let wallpaper = dataStore[indexPath.item]
-        let url = wallpaper.valueForKey("remoteUrl") as! String
-        cell.imageUrl = url
+        cell.wallpaper = wallpaper
         return cell;
     }
     
@@ -109,7 +98,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     // MARK: - ViewController Lifecycle -
     override func viewDidLoad()
     {
-        print("ViewDidLoad: \(self)")
         super.viewDidLoad()
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -121,27 +109,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool)
     {
-        print("ViewWillAppear: \(self)")
         super.viewWillAppear(animated)
         reloadDataStore()
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        print("ViewDidAppear: \(self)")
-        super.viewDidAppear(animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        print("ViewWillDisappear: \(self)")
-        super.viewWillDisappear(animated)
-    }
-    
-    override func viewDidDisappear(animated: Bool) {
-        print("ViewDidDisappear: \(self)")
-        super.viewDidDisappear(animated)
-    }
-    
+    }    
     
     func refresh(sender:AnyObject)
     {
@@ -167,7 +137,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         do {
             let results =
             try managedContext.executeFetchRequest(fetchRequest)
-            dataStore = results as! [NSManagedObject]
+            dataStore = results as! [Wallpaper]
             tableView.reloadData()
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
@@ -232,7 +202,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         if segue.identifier == "showImage" {
             if let wallpaperVC = segue.destinationViewController as? WallpaperViewController,
                 let originatingCell = sender as? ImageTableViewCell {
-               wallpaperVC.imageUrl=originatingCell.imageUrl
+               wallpaperVC.wallpaper = sender?.wallpaper
             }
         }
     }

@@ -12,49 +12,21 @@ import Alamofire
 class WallpaperViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-
-    var imageUrl: String = "" {
+    
+    var image : UIImage?
+    
+    var wallpaper: Wallpaper? {
         didSet {
-            Alamofire.request(.GET, imageUrl)
-                .responseImage { response in
-                    self.imageView?.contentMode = .ScaleAspectFill
-                    self.imageView?.image = response.result.value
-                }
+            wallpaper?.loadImage({ (image) -> Void in
+                self.image = image
+                self.imageView?.image = self.image
+            })
         }
     }
     
-    // MARK: - ViewController Lifecycle -
-    override func viewDidLoad()
-    {
-        print("ViewDidLoad: \(self)")
+    override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(animated: Bool)
-    {
-        print("ViewWillAppear: \(self)")
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        print("ViewDidAppear: \(self)")
-        super.viewDidAppear(animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        print("ViewWillDisappear: \(self)")
-        super.viewWillDisappear(animated)
-    }
-    
-    override func viewDidDisappear(animated: Bool)
-    {
-        print("ViewDidDisappear: \(self)")
-        super.viewDidDisappear(animated)
-    }
-    
-    deinit
-    {
-        print("Deinit: \(self)")
+        imageView.contentMode = .ScaleAspectFill
+        imageView.image = self.image
     }
 }
